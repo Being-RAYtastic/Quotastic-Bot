@@ -2,4 +2,4 @@
 A discord Bot that gives random quotes.
 
 # Commands
-- -quote (gives a quote)
+- /quote (gives a quote)
