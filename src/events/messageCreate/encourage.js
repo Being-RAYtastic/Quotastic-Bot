@@ -11,6 +11,8 @@ const encouraging_words = require("../../data/encouragingWordsList")
 
 
 module.exports = (client, message) => {
+    if (message.author.bot) return
+
     if (sad_words.some(word => ((message.content).toLowerCase()).includes(word))) {
         let randomEncouragingPhrase = Math.floor(Math.random() * encouraging_words.length)
         message.reply(encouraging_words[randomEncouragingPhrase])
