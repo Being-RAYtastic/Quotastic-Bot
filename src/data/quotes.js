@@ -42,7 +42,7 @@ const quotes = [
     "“There's no time like the present, I guess.”\n ~ Kakashi Hatake ",
 
     "“The hole in one's heart gets filled by other around you.”\n ~ Kakashi Hatake",
-    
+
     "“In society, those who don't have many abilities, tend to complain more.”\n ~ Kakashi Hatake",
 
     "“Between those who experience the same pain, there can be no hatred.”\n ~ Gaara ",
@@ -54,4 +54,4 @@ const quotes = [
     "“Hard work beats Talent”\n ~ Rock Lee",
 ]
 
-module.exports = {quotes}
+module.exports = { quotes }
