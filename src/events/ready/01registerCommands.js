@@ -16,10 +16,11 @@ module.exports = async (client) => {
             })
 
             if (existingCommand) {
-                if (localCommand.deleted) await applicationCommands.delete(existingCommand.id)
-                console.log(`🗑️Deleted command: ${name}`)
-                continue
-
+                if (localCommand.deleted) {
+                    await applicationCommands.delete(existingCommand.id)
+                    console.log(`🗑️Deleted command: ${name}`)
+                    continue
+                }
 
                 if (areCommandsDifferent(existingCommand, localCommand)) {
                     await applicationCommands.edit(existingCommand.id, {
@@ -30,7 +31,7 @@ module.exports = async (client) => {
 
                 }
             } else {
-                if(localCommand.deleted) {
+                if (localCommand.deleted) {
                     console.log(`🚫 Skipping registering command ${name} as it's set to delete`)
                     continue
                 }
