@@ -6,22 +6,18 @@ const emojis = require('../../data/discordEmojiList')
  * @param {Message} message 
  */
 
-const greetings_wordList = [
-    "hello",
-    "hi",
-    "ahoy",
-    "yo",
-    "ayo",
-    "hiya",
-    "hey there",
-    "hola",
-    "hey",
-    "hoya",
-    "bonjour",
-    "namaste",
-    "konichiwa",
-    "kon'nichiwa",
+const farewell_wordList = [
+    "bye",
+    "see you soon", "see u soon",
+    "goodbye",
+    "byebye",
+    "tata",
+    "see ya",
+    "alvida",
+    "au revoir",
+    "sayonara",
 ]
+
 const capitalizeFirstLetter = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
@@ -30,7 +26,7 @@ module.exports = (client, message) => {
     try {
         if (message.author.bot) return
 
-        const greetingMessageFromUser = greetings_wordList.some(word =>
+        const farewellMessageFromUser = farewell_wordList.some(word =>
             (
                 (
                     (message.content).toLowerCase()
@@ -39,9 +35,9 @@ module.exports = (client, message) => {
         )
 
 
-        if (greetingMessageFromUser) {
-            const randomGreetingPhrase = Math.floor(Math.random() * greetings_wordList.length)
-            message.channel.send(`${capitalizeFirstLetter(greetings_wordList[randomGreetingPhrase])}! ${emojis.elegant_cheems}`)
+        if (farewellMessageFromUser) {
+            const randomFarewellPhrase = Math.floor(Math.random() * farewell_wordList.length)
+            message.channel.send(`${capitalizeFirstLetter(farewell_wordList[randomFarewellPhrase])}! ${emojis.cheems_blanket}`)
         }
     } catch (error) {
         console.log(`Some Error occurred: ${error}`)
