@@ -21,7 +21,7 @@ request.get({
             // console.log(fact)
         }
     } catch (e) {
-        console.log(`Some error occured in FACTS_API: ${e}`)
+        console.log(`Some error occurred in FACTS_API: ${e}`)
     }
 
 
