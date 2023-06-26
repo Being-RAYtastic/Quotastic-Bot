@@ -1,5 +1,6 @@
 const { Client, Message } = require("discord.js")
 const emojis = require('../../data/discordEmojiList')
+const capitalizeFirstLetter = require("../../utils/capitalizeFirstLetter")
 /**
  * 
  * @param {Client} client 
@@ -22,9 +23,6 @@ const greetings_wordList = [
     "konichiwa",
     "kon'nichiwa",
 ]
-const capitalizeFirstLetter = (string) => {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
 
 module.exports = (client, message) => {
     try {
