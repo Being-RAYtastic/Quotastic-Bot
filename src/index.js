@@ -1,8 +1,8 @@
 require('dotenv').config()
 const TOKEN = process.env.TOKEN
-const { Client, IntentsBitField} = require("discord.js")
+const { Client, IntentsBitField,} = require("discord.js")
 const eventHandler = require('./handlers/eventHandler')
-const keepAlive = require('./server');
+// const keepAlive = require('./server');
 
 
 // * client is our BOT INSTANCE
@@ -19,6 +19,5 @@ const client = new Client({
 
 eventHandler(client)
 
-
-keepAlive()
+// keepAlive()
 client.login(TOKEN)
