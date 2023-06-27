@@ -10,7 +10,7 @@ module.exports = (client) => {
     }, 1000);
     */
     client.user.setActivity({
-        name: 'In Beta Mode',
+        name: 'Motivational Thoughts',
         type: ActivityType.Streaming,
         url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley "
     })

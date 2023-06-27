@@ -1,4 +1,4 @@
-const quotes = [
+const animeQuotes = [
     "“Justice comes from vengeance but that justice only breeds more vengeance.”\n ~ Nagato Uzumaki",
 
     "“Sometimes you must HURT in order to KNOW, FALL in order to GROW, LOSE in order to GAIN, because life's greatest lessons are learned through PAIN.”\n ~ Nagato Uzumaki",
@@ -53,5 +53,4 @@ const quotes = [
 
     "“Hard work beats Talent”\n ~ Rock Lee",
 ]
-
-module.exports = { quotes }
+module.exports = { animeQuotes }
