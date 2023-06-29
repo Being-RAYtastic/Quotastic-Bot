@@ -44,7 +44,7 @@ module.exports = {
                 }
             })
         } catch (e) {
-            console.log(`Some Error occurred in joke.js: ${e}`)
+            console.log(`Some Error occurred in riddle.js: ${e}`)
         }
 
 

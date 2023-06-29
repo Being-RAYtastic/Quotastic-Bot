@@ -37,7 +37,7 @@ module.exports = {
 
                 }
             } catch (e) {
-                console.log(`Some error occurred in FACTS_API: ${e}`)
+                console.log(`Some error occurred in fact.js: ${e}`)
             }
         });
     }
