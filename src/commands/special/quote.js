@@ -1,7 +1,6 @@
 require('dotenv').config()
-const { EmbedBuilder } = require('discord.js')
+const { EmbedBuilder, ApplicationCommandOptionType } = require('discord.js')
 const request = require('request');
-const { ApplicationCommandOptionType } = require('discord.js');
 const capitalizeFirstLetter = require('../../utils/capitalizeFirstLetter');
 
 const categoryList = [
@@ -28,7 +27,7 @@ module.exports = {
     name: 'quote',
     description: 'sends a random quote',
     // devOnly: true,
-    testOnly: true,
+    // testOnly: true,
     options: [
         {
             name: "category",
