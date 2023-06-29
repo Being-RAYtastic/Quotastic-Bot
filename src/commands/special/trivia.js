@@ -58,7 +58,7 @@ module.exports = {
 
                     // Will reply to user “”
                     const embed = new EmbedBuilder()
-                        .setTitle(`Trivia`)
+                        .setTitle(`Trivia - ${categoryType}`)
                         .setDescription(`**${triviaQuestion}**`)
                         .addFields(
                             {
@@ -66,11 +66,11 @@ module.exports = {
                                 value: `||${triviaAnswer}||`,
                                 inline: true,
                             },
-                            {
-                                name: " ",
-                                value: `Category: ${capitalizeFirstLetter(categoryType)}`,
-                                inline: true,
-                            }
+                            // {
+                            //     name: " ",
+                            //     value: `Category: ${capitalizeFirstLetter(categoryType)}`,
+                            //     inline: true,
+                            // }
                         )
                         .setColor('NotQuiteBlack')   // * You can add custom color by writing '0xhexcod'  #HEXCODES
 
