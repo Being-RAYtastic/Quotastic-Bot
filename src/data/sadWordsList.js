@@ -23,5 +23,6 @@ const sad_words = [
     "depressed",
     "depression",
     "distressed",
+    "encourage",
 ]
 module.exports = sad_words
