@@ -4,7 +4,7 @@ const { EmbedBuilder } = require('discord.js')
 
 module.exports = {
     name: 'anime-quote',
-    description: 'sends a random anime quote',
+    description: 'Sends a random Anime Quote',
     // devOnly: boolean,
     // testOnly: boolean,
     // options: Object[],

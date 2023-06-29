@@ -25,7 +25,7 @@ const categoryList = [
 
 module.exports = {
     name: 'quote',
-    description: 'sends a random quote',
+    description: 'Sends a random Quote',
     // devOnly: true,
     // testOnly: true,
     options: [

@@ -5,7 +5,7 @@ const request = require('request');
 const limit =  1
 module.exports = {
     name: 'joke',
-    description: 'sends a random joke',
+    description: 'Sends a random Joke',
     // devOnly: true,
     testOnly: true,
     // deleted: boolean,
