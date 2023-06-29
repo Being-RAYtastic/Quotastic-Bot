@@ -61,8 +61,8 @@ module.exports = {
 
                     // Will reply to user “”
                     const embed = new EmbedBuilder()
-                        .setTitle(`“${quote}”`)
-                        // .setDescription(`~ ${author}`)
+                        // .setTitle(`“${quote}”`)
+                        .setDescription(`***“${quote}”***`)
                         .addFields(
                             {
                                 name: `- ${author}`,
@@ -75,7 +75,7 @@ module.exports = {
                                 inline: true,
                             }
                         )
-                        .setColor('DarkBlue')   // * You can add custom color by writing '0xhexcod'  #HEXCODES
+                        .setColor('Orange')   // * You can add custom color by writing '0xhexcod'  #HEXCODES
 
                     interaction.reply({ embeds: [embed] })
                 }

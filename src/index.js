@@ -1,6 +1,6 @@
 require('dotenv').config()
 const TOKEN = process.env.TOKEN
-const { Client, IntentsBitField,} = require("discord.js")
+const { Client, IntentsBitField, } = require("discord.js")
 const eventHandler = require('./handlers/eventHandler')
 // const keepAlive = require('./server');
 
@@ -16,8 +16,12 @@ const client = new Client({
     ]
 })
 
+try {
+    eventHandler(client)
 
-eventHandler(client)
+    // keepAlive()
+    client.login(TOKEN)
+} catch (error) {
+    console.log(`Some error came in index.js: ${error}`)
+}
 
-// keepAlive()
-client.login(TOKEN)

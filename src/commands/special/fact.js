@@ -31,7 +31,7 @@ module.exports = {
                     const embed = new EmbedBuilder()
                         .setTitle(fact)
                         .setDescription("Random Facts")
-                        .setColor('Blue')   // * You can add custom color by writing '0xhexcod'  #HEXCODES
+                        .setColor('LuminousVividPink')   // * You can add custom color by writing '0xhexcod'  #HEXCODES
 
                     interaction.reply({ embeds: [embed] })
 
